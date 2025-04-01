@@ -1,0 +1,131 @@
+body {
+    font-family: Roboto, Arial;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.login {
+    width: 70%;
+    height: 100vh;
+    background-color: rgb(96, 172, 207);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.363);
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.login-box {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+.login-box h1{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    width: 100%;
+    max-width: 350px;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    border: 1px solid #cccccc;
+    border-radius: 25px;
+    padding: 10px 15px;
+    background-color: #f5f7fa;
+    
+  }
+  
+.input-group input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 5px;
+    min-width: 150px;
+    background-color: transparent;
+    box-sizing: border-box;
+    width: 500px;
+  }
+
+@media (max-width: 768px) {
+    .login {
+        width: 90%;
+        border-radius: 20px;
+    }
+
+    .input-group {
+        max-width: 300px;
+    }
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #ffffff;
+  }
+
+.remember-me input {
+    margin-right: 10px;
+  }
+  
+.button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.login-btn,
+.signup-btn {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+.login-btn {
+    background-color: rgba(32,140,189,255);
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+.signup-btn {
+    background-color: #ffffff;
+    color: rgba(32,140,189);
+  }
+  
+.login-btn:hover {
+    background-color: rgb(23, 99, 134);
+  }
+  
+.signup-btn:hover {
+    background-color: rgb(202, 214, 219);
+}
+
+.design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100vh;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+    <header>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="GENERAL.css">
+        <link rel="stylesheet" href="SIDEBAR.css">
+        <link rel="stylesheet" href="MAINWIN.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script type="module" src="SETTINGS.js"></script>
+        <title>Settings</title>
+    </header>
+    <body>
+        <div class="sidebar" id="sidebar">
+            <div class="profile">
+                <div class="profile-icon">
+                    <div class="circle"></div>
+                </div>
+                <div class="profile-text">
+                    <h3>Loading...</h3>
+                    <p>...</p>
+                </div>
+            </div>
+            <nav class="menu">
+                <a href="http://127.0.0.1:5500/ADMIN/DASHBOARD/Dashboard.html" class="menu-item">
+                    <img src="Icons/dashboard.svg">
+                    <span>Dashboard</span>
+                </a>
+                <a href="http://127.0.0.1:5500/ADMIN/INVENTORY/INVENTORY.html"class="menu-item inventory">
+                    <img src="Icons/inventory.svg">
+                    <span>Inventory Log</span>
+                </a>
+                <div class="menu-item sales">
+                    <img src="Icons/sales.svg">
+                    <span>Transaction</span>
+                    <ul class="submenu">
+                        <li><a href="http://127.0.0.1:5500/ADMIN/TRANSACTION/Terminal/TERMINAL.html">Terminal</a></li>
+                        <li><a href="http://127.0.0.1:5500/ADMIN/TRANSACTION/History/HISTORY.html">History</a></li>
+                    </ul>
+                </div>
+                <a>
+                <a href="http://127.0.0.1:5500/ADMIN/SETTINGS/SETTINGS.html" class="menu-item">
+                            <img src="Icons/settings.svg">
+                            <span class="active">Settings</span>
+                </a>
+            </nav>
+            <div class="logout-button">
+                <a href="http://127.0.0.1:5500/ADMIN/LOGIN/LOGIN.html" class="logout-link">Logout</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header">
+                <h1>Profile Settings</h1>
+            </div>
+            <div class="content">
+            <div class="section">
+                <h2>Change Username</h2>
+                <form id="changeUsernameForm">
+                    <input type="text" id="updateFirstName" placeholder="First Name" required>
+                    <input type="text" id="updateLastName" placeholder="Last Name" required>
+                    <button type="submit" class="save-btn">Save</button>
+                </form>
+            </div>
+            <div class="section">
+                <h2>Change Password</h2>
+                <form id="changePasswordForm">
+                    <input type="password" id="currentPassword" placeholder="Current Password" required>
+                    <input type="password" id="newPassword" placeholder="New Password" required>
+                    <input type="password" id="confirmNewPassword" placeholder="Confirm New Password" required>
+                    <button type="submit" class="save-btn">Save</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="form-section" id="createAccountSection">
+            <h2>Create New Account</h2>
+             <form id="createAccountForm">
+                 <input type="text" id="createFirstName" placeholder="First Name" required>
+                 <input type="text" id="createLastName" placeholder="Last Name" required>
+                 <input type="email" id="createEmail" placeholder="Email Address" required>
+                 <input type="password" id="createPassword" placeholder="Password (min. 6 characters)" required>
+                 <input type="password" id="createConfirmPassword" placeholder="Confirm Password" required>
+                 <label>Position</label>
+                 <select id="createPosition" required>
+                    <option value="" disabled selected>--Select Position--</option>
+                    <option value="Admin">Admin</option>
+                     <option value="Employee">Employee</option>
+                 </select>
+                 <button type="submit" class="save-btn">Create Account</button>
+             </form>
+         </div>
+
+      </body>
+</html>

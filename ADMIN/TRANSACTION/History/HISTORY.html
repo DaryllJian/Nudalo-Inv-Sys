@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="GENERAL.css">
+    <link rel="stylesheet" href="SIDEBAR.css">
+    <link rel="stylesheet" href="LOG.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script type="module" src="HISTORY.js"></script>
+    <title>Sales History</title>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <nav class="menu">
+            <a href="http://127.0.0.1:5500/ADMIN/DASHBOARD/Dashboard.html" class="menu-item">
+                <img src="Icons/dashboard.svg">
+                <span>Dashboard</span>
+            </a>
+            <a href="http://127.0.0.1:5500/ADMIN/INVENTORY/INVENTORY.html" class="menu-item">
+                <img src="Icons/inventory.svg">
+                <span>Inventory Log</span>
+            </a>
+            <div class="menu-item sales">
+                <img src="Icons/sales.svg">
+                <span class="active">Transaction</span>
+                <ul class="submenu">
+                    <li><a href="http://127.0.0.1:5500/ADMIN/TRANSACTION/Terminal/TERMINAL.html">Terminal</a></li>
+                    <li><a href="http://127.0.0.1:5500/ADMIN/TRANSACTION/History/HISTORY.html" class="active">History</a></li>
+                </ul>
+            </div>
+            <a>
+            <a href="http://127.0.0.1:5500/ADMIN/SETTINGS/SETTINGS.html" class="menu-item">
+                        <img src="Icons/settings.svg">
+                        <span>Settings</span>
+            </a>
+        </nav>
+        <div class="logout-button">
+            <a href="http://127.0.0.1:5500/ADMIN/LOGIN/LOGIN.html" class="logout-link">Logout</a>
+        </div>
+    </div>
+
+    <div class="transactions-section">
+        <h1>Transaction History
+            <div class="search-container">
+                <label for="search-date">Search by Date</label>
+                <input type="date" id="dateInput">
+                <button id="searchButton">Search</button>
+            </div>
+        </h1>
+        </div>
+  </body>
+</html>

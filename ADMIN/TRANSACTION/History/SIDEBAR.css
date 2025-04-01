@@ -1,0 +1,148 @@
+.sidebar {
+    width: 230px;
+    height: 100vh;
+    background-color: #f0f8ff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+.sidebar .menu-item {
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: rgb(214, 239, 250);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #b0e0e6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    position: relative;
+}
+
+.profile-icon .circle {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.profile-text h3 {
+    margin: 0;
+    font-size: .9rem;
+    color: #344c77;
+}
+
+.profile-text p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.menu {
+    flex: 1;
+    overflow: hidden;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #344c77;
+    text-decoration: none;
+    margin-bottom: 15px;
+    transition: background-color 0.2s;
+    padding: 10px;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.menu-item:hover {
+    background-color: #b0e0e6;
+}
+
+.menu-item.inventory,
+.menu-item.sales {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f0f8ff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    width: 200px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.submenu li {
+    padding: 10px 20px;
+}
+
+.submenu li a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #344c77;
+    transition: background-color 0.2s;
+}
+
+.submenu li:hover {
+    background-color: #b0e0e6;
+}
+
+.menu-item.inventory:hover .submenu,
+.menu-item.sales:hover .submenu {
+    display: block;
+}
+
+.active {
+    font-weight: 550;
+}
+
+.logout-button {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(214, 239, 250);
+    border-radius: 10px;
+}
+
+.logout-link {
+    font-size: 1rem;
+    color: #344c77;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.logout-button:hover {
+    background-color: #b0e0e6;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}

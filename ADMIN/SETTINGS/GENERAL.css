@@ -1,0 +1,10 @@
+body {
+    font-family: Roboto, Arial;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    background-color: rgb(245, 250, 255);
+}
+

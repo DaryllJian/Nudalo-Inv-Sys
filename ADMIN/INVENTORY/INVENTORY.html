@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+    <header>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="GENERAL.css">
+        <link rel="stylesheet" href="SIDEBAR.css">
+        <link rel="stylesheet" href="INVENT-LOG.css">
+        <link rel="stylesheet" href="INFO-INPUT.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script type="module" src="inventory.js"></script>
+        <title>Inventory Log</title>
+    </header>
+    
+    <body>
+        <div class="sidebar" id="sidebar">
+            <nav class="menu">
+                <a href="http://127.0.0.1:5500/ADMIN/DASHBOARD/Dashboard.html" class="menu-item">
+                    <img src="Icons/dashboard.svg">
+                    <span>Dashboard</span>
+                </a>
+                <a href="http://127.0.0.1:5500/ADMIN/INVENTORY/INVENTORY.html" class="menu-item">
+                    <img src="Icons/inventory.svg">
+                    <span class="active">Inventory Log</span>
+                </a>
+                <div class="menu-item sales">
+                    <img src="Icons/sales.svg">
+                    <span>Transaction</span>
+                    <ul class="submenu">
+                        <li><a href="http://127.0.0.1:5500/ADMIN/TRANSACTION/Terminal/TERMINAL.html">Terminal</a></li>
+                        <li><a href="http://127.0.0.1:5500/ADMIN/TRANSACTION/History/HISTORY.html">History</a></li>
+                    </ul>
+                </div>
+                <a>
+                <a href="http://127.0.0.1:5500/ADMIN/SETTINGS/SETTINGS.html" class="menu-item">
+                            <img src="Icons/settings.svg">
+                            <span>Settings</span>
+                </a>
+            </nav>
+            <div class="logout-button">
+                <a href="http://127.0.0.1:5500/ADMIN/LOGIN/LOGIN.html" class="logout-link">Logout</a>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <div>
+                <h1 id="inventory-category-title">Food and Drinks</h1>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>CODE</th>
+                        <th>DESC.</th>
+                        <th>QTY.</th>
+                        <th>PRICE</th>
+                        <th>DAMAGE</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+ 
+        <div class="right-sidebar">
+            <div class="search-section">
+                <input type="text" class="search-bar" placeholder="Search . . ." />
+            </div>
+ 
+            <div class="filter-section">
+                <form>
+                    <label for="category">CATEGORY</label>
+                    <select id="category" class="dropdown" aria-placeholder="Select a category">
+                        <option value="foods_drinks" selected>Foods and Drinks</option>
+                        <option value="personal_care">Personal Care</option> 
+                        <option value="household_supplies">Household Supplies</option> 
+                        <option value="medicines">Medicines</option>
+                        <option value="tobacco_alcohol">Tobacco and Alcohol</option> 
+                        <option value="stationary">Stationary</option>
+                    </select>
+    
+                    <label for="code">CODE</label>
+                    <input type="number" id="code" class="input-bar" min="0"/>
+    
+                    <label for="description">DESCRIPTION</label>
+                    <input type="text" id="description" class="input-bar" />
+    
+                    <div class="row">
+                        <div class="col">
+                            <label for="quantity">QUANTITY</label>
+                            <input type="number" id="quantity" class="input-bar" min="0"/>
+                        </div>
+                        <div class="col">
+                            <label for="item-price">ITEM PRICE</label>
+                            <input type="number" id="item-price" class="input-bar" min="0"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="damages">DAMAGES</label>
+                            <input type="number" id="damages" class="input-bar" min="0"/>
+                        </div>
+                        <div class="col">
+                            <label for="restock">RESTOCK ALERT QTY</label>
+                            <input type="number" id="restock" class="input-bar" min="0"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+ 
+            <div class="add-btn-section">
+                <button class="add-btn" id="addItemBtn">ADD</button>
+            </div>
+        </div>
+      </body>
+</html>

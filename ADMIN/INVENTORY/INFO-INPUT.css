@@ -1,0 +1,95 @@
+.right-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px; /* Adjusted width to fit better */
+    height: 95vh; /* Full height of the viewport */
+    background-color: #8ebce5;
+    padding: 15px 21px; /* Reduced padding */
+    border-radius: 15px 0 0 15px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Ensure scrollbar appears if content overflows */
+}
+
+/* Search Section */
+.search-section {
+    text-align: center;
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.search-bar {
+    width: 85%; /* Adjusted width */
+    padding: 8px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+/* Filter Section */
+.filter-section label {
+    display: block;
+    font-size: 14px; /* Reduced font size */
+    font-weight: bold;
+    color: #344c77;
+    margin: 10px 0 6px; /* Adjusted margin */
+}
+
+.input-bar, .dropdown {
+    width: 85%; /* Adjusted width */
+    padding: 8px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Added spacing between rows */
+}
+
+.col {
+    width: 48%; /* Maintained equal spacing for columns */
+}
+
+/* Additional Info Button */
+.additional-info {
+    text-align: center;
+    margin-top: 5px; /* Reduced margin */
+}
+
+/* Add Button Section */
+.add-btn-section {
+    text-align: center;
+    margin-top: 10px; /* Reduced margin */
+}
+
+.add-btn {
+    background-color: #5395cf;
+    border: none;
+    padding: 10px 20px; /* Reduced padding */
+    border-radius: 20px;
+    color: white;
+    font-size: 18px; /* Reduced font size */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #4797d3;
+}
+
+/* Scrollbar Styles for Overflow */
+.right-sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.right-sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.right-sidebar::-webkit-scrollbar-track {
+    background-color: transparent;
+}

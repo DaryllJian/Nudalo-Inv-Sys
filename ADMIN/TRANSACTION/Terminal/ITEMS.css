@@ -1,0 +1,126 @@
+.container {
+    margin-left: 235px; /* Adjust the content to the right of the left sidebar */
+    margin-right: 290px; /* Add margin to the right to prevent the table from going behind the right sidebar */
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto; /* Allow vertical scrolling */
+    height: calc(100vh - 40px);
+}
+
+.header {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #32486e;;
+}
+
+.header .search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #d1f2f8;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.199);
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #32486e;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.card .actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.card .actions button {
+    background-color: #d1f2f8;
+    color: #32486e;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card .actions button:hover {
+    transition: 150ms;
+    font-weight: 700;
+}
+
+.card .add-button {
+    display: block;
+    width: 100%;
+    background-color: #5395cf;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card .add-button:hover {
+    transition: 150ms;
+    background-color: #4173a0;
+}
+
+.quantity-input {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.delete-item {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-item:hover {
+    font-weight: bold;
+    color: darkred;
+}

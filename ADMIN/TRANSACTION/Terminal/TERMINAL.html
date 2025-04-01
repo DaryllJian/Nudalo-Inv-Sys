@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+    <header>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="GENERAL.css">
+        <link rel="stylesheet" href="SIDEBAR.css">
+        <link rel="stylesheet" href="INVENT-LOG.css">
+        <link rel="stylesheet" href="INFO-INPUT.css">
+        <link rel="stylesheet" href="ITEMS.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script type="module" src="TERMINAL.js"></script>
+        <title>Sales Terminal</title>
+    </header>
+    <body>
+        <div class="sidebar" id="sidebar">
+            <nav class="menu">
+                <a href="http://127.0.0.1:5500/ADMIN/DASHBOARD/Dashboard.html" class="menu-item">
+                    <img src="Icons/dashboard.svg">
+                    <span>Dashboard</span>
+                </a>
+                <a href="http://127.0.0.1:5500/ADMIN/INVENTORY/INVENTORY.html"  class="menu-item inventory">
+                    <img src="Icons/inventory.svg">
+                    <span>Inventory Log</span>
+                </a>
+                <div class="menu-item sales">
+                    <img src="Icons/sales.svg">
+                    <span  class="active">Transaction</span>
+                    <ul class="submenu">
+                        <li><a href="http://127.0.0.1:5500/ADMIN/TRANSACTION/Terminal/TERMINAL.html"  class="active">Terminal</a></li>
+                        <li><a href="http://127.0.0.1:5500/ADMIN/TRANSACTION/History/HISTORY.html">History</a></li>
+                    </ul>
+                </div>
+                <a>
+                <a href="http://127.0.0.1:5500/ADMIN/SETTINGS/SETTINGS.html" class="menu-item">
+                            <img src="Icons/settings.svg">
+                            <span>Settings</span>
+                </a>
+            </nav>
+            <div class="logout-button">
+                <a href="http://127.0.0.1:5500/ADMIN/LOGIN/LOGIN.html" class="logout-link">Logout</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header">
+                <h1>Sales Terminal</h1>
+                <div class="search">
+                    <input type="text" placeholder="Search . . .">
+                </div>
+            </div>
+
+            <div class="grid">
+                </div>
+
+        </div>
+
+        <div class="right-sidebar">
+        <div class="sidebar-header">
+            <span>November 17, 2024</span>
+            <span>10:15 AM</span>
+        </div>
+
+        <div class="items-list">
+            </div>
+
+        <div class="totals">
+            <span>Total Amount: 0.00</span>
+            <div class="input-field">
+                <label for="amount-paid">Amount Paid: </label>
+                <input type="text" id="amount-paid" placeholder="Enter amount">
+            </div>
+            <span>Change: 0.00</span>
+        </div>
+
+        <div class="sidebar-footer">
+            <button class="ok-button">OK</button>
+            <button class="delete-button">DELETE</button>
+        </div>
+    </div>
+      </body>
+</html>
